@@ -1,0 +1,29 @@
+{
+  "name": "practiceqa-supertest-mocha-api",
+  "version": "1.0.0",
+  "description": "API automation framework with SuperTest, Mocha and Chai against the PracticeQAAutomation practice REST API",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "api:fetch": "node scripts/fetch-api.mjs",
+    "test": "mocha",
+    "test:smoke": "mocha --grep @smoke",
+    "test:regression": "mocha --grep @regression",
+    "lint": "eslint ."
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.12.0",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "chai": "^5.1.1",
+    "eslint": "^9.12.0",
+    "globals": "^15.11.0",
+    "mocha": "^10.7.3",
+    "mochawesome": "^7.1.3",
+    "supertest": "^7.0.0"
+  }
+}

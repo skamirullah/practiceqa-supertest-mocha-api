@@ -1,0 +1,7 @@
+{
+  "spec": "test/**/*.spec.js",
+  "require": ["src/hooks/globalSetup.js", "src/hooks/rootHooks.js"],
+  "timeout": 10000,
+  "reporter": "mochawesome",
+  "reporter-option": ["reportDir=reports", "reportFilename=api-report", "quiet=true", "charts=true"]
+}
